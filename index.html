@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VRXOS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="boot">
+    <h1>VRXStudios</h1>
+    <p>Запуск VRXOS...</p>
+    <div class="loader"></div>
+    <p id="loadingText">Проверка системы...</p>
+</div>
+
+
+<div id="desktop" hidden>
+    <h1>VRXOS Desktop</h1>
+    <p>Virtual Reality Experience Operating System</p>
+
+    <button onclick="openPage('settings.html')">
+        ⚙ Настройки
+    </button>
+
+    <button onclick="openPage('recovery.html')">
+        🛠 Режим восстановления
+    </button>
+
+    <button onclick="openPage('update.html')">
+        ⬆ Обновление ПО
+    </button>
+
+    <button onclick="openPage('system_check.html')">
+        🔍 Диагностика
+    </button>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

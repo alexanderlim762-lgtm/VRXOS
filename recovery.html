@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VRXOS Recovery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>VRXStudios Recovery</h1>
+
+<p>Меню восстановления</p>
+
+
+<button onclick="terminal()">
+Терминал
+</button>
+
+
+<button onclick="restore()">
+Восстановление системы
+</button>
+
+
+<button onclick="diagnostic()">
+Диагностика
+</button>
+
+
+<button onclick="location.href='index.html'">
+Вернуться в VRXOS
+</button>
+
+
+<p id="result"></p>
+
+
+<script>
+
+function terminal(){
+document.getElementById("result").innerHTML =
+"VRX Terminal запущен";
+}
+
+
+function restore(){
+document.getElementById("result").innerHTML =
+"Восстановление системы запущено...";
+}
+
+
+function diagnostic(){
+
+document.getElementById("result").innerHTML =
+"Диагностика VRXOS:<br><br>"+
+"✓ Системные файлы<br>"+
+"✓ Настройки<br>"+
+"✓ Приложения<br><br>"+
+"Система стабильна";
+
+}
+
+</script>
+
+
+</body>
+</html>
